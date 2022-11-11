@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>TripBoss</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- font awesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- fonts -->
+        <link rel = "stylesheet" href = "font/fonts.css">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <!-- favicon -->
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+        <!-- custom css -->
+        <link rel = "stylesheet" href = "css/style.css">
+
+        <!-- swiper -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+        <!-- <link rel = "stylesheet" href = "css/responsive.css"> -->
+    </head>
+    <body>
+        <!-- navbar  -->
+ <div class="d-flex justify-content-center align-items-center mx-lg-auto">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-2 py-lg-0 rounded-2" style="max-width: 80rem;">
+            <a href="" class="site-brand me-lg-5 p-3">
+                <h1 class="me-lg-5">Travel &amp; <span class="text-travel">Hotel</span></h1>
+                <!-- <img src="img/logo.png" alt="Logo"> -->
+            </a>
+           
+            <button class="navbar-toggler rounded-pill text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-lg-5 py-0">
+                    <a href="index.html" class="nav-item nav-link px-lg-3">Home</a>
+                    <a href="about.html" class="nav-item nav-link px-lg-3">About</a>
+                    <a href="gallery.html" class="nav-item nav-link px-lg-3">Gallery</a>
+                    <a href="contact.html" class="nav-item nav-link px-lg-3 d-lg-none">Contact</a>
+                    <a href="contact.html" class="btn btn-warning rounded-1 py-1 px-2 ms-3 d-lg-none fw-bold">Free Trial</a>
+                </div>
+                <div class="navbar-nav ms-lg-auto me-lg-0 py-0">
+                    <a href="contact.html" class="nav-item nav-link mx-lg-3 d-none d-lg-block">Contact</a>
+                    <img src="img/wa.svg" width="30" class="mx-2 d-none d-lg-block" alt="" srcset="">
+                </div>
+                <a href="contact.html" class="btn btn-warning rounded-1 py-2 px-4 ms-3 d-none d-lg-block fw-bold">Free Trial</a>
+            </div>
+        </nav>
+</div>
+        <!-- end of navbar  -->
+
+        <!-- header -->
+        <header class = "flex mb-5 pb-5">
+            <div class = "container">
+                <div class = "header-title">
+                    <h1>Leave Your Footprints</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus rerum maxime enim odit illum in molestias beatae doloremque, ratione optio.</p>
+                </div>
+                <div class="book-button">
+                    <a href="" class="btn btn-primary py-md-3 px-md-5 my-2 my-lg-0 me-3 animated slideInLeft">Our Rooms</a>
+                    <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</a>
+                </div>
+         
+            </div>
+        </header>
+        <div class="container-xxl booking pb-5" style="margin-top: -100px; width: 85%;" >
+            <div class="container">
+                <div class="booking-form rounded-2 shadow" style="padding: 25px;">
+                    <div class="title">
+                        <h1 class="text-primary text-center ">Fill this Form</h1>
+                    </div>
+                    <div class="row g-2">
+                        <div class="col-md-10">
+                            <div class="row g-2">
+                                <div class="col-md-3 col-12">
+                                    <div class="form-group" id="date1" data-target-input="nearest">
+                                        <label for="date"> Check In Date</label>
+                                        <input type="date" class="form-control text-dark border-dark datetimepicker-input"
+                                            placeholder="Check in" data-target="#date1" data-toggle="datetimepicker" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-12">
+                                    <div class="form-group" id="date2" data-target-input="nearest">
+                                        <label for="date"> Check In Date</label>
+                                        <input type="date" class="form-control text-dark border-dark datetimepicker-input" placeholder="Check out" data-target="#date2" data-toggle="datetimepicker"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-12">
+                                    <label for="date"> Check In Date</label>
+                                    <select class="form-select p-2 mt-lg-1">
+                                        <option selected>Adult</option>
+                                        <option value="1">Adult 1</option>
+                                        <option value="2">Adult 2</option>
+                                        <option value="3">Adult 3</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3 col-12">
+                                    <label for="date"> Check In Date</label>
+                                    <select class="form-select p-2 mt-lg-1">
+                                        <option selected>Child</option>
+                                        <option value="1">Child 1</option>
+                                        <option value="2">Child 2</option>
+                                        <option value="3">Child 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-primary px-5 mt-lg-4">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class = "header-form" style="margin-top: -150px;" >
+            <h2>Choose your Travel location:</h2>
+            <form class = "flex">
+                <input type = "text" class = "form-control" placeholder="Destination name">
+                <input type="date" class = "form-control" placeholder="Date">
+                <input type="number" class = "form-control" placeholder="Price ($)">
+                <input type="submit" class = "btn" value = "Search">
+            </form>
+        </div> -->
+        <!-- header -->
+
+
+
+        <!-- about -->
+        <section class="about py-5 mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="d-flex mini-title">
+                            <h5 class="text-secondary"> About us</h5>
+                            <span class="bg-primary mx-3 mt-2" style="width: 35px; height:2px;"></span>
+
+                        </div>
+                        <h1 class="text-warning my-4">Our Travel</h1>
+                        <h6 class="text-primary fw-500" style="line-height: 30px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio officia vero porro, ipsa, enim fugiat omnis laborum ratione rerum neque inventore minus eaque sequi corporis quia doloremque quis reprehenderit. Maxime.</h6>
+                        <a class="btn btn-primary mt-3 pt-3" href=""> explore more</a>
+                    </div>
+                    <div class="col-lg-6 my-5 my-lg-0">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="images/about-1.jpg" class="img-fluid mt-lg-5"  alt="">
+                            </div>
+                            <div class="col-6">
+                                <img src="images/about-img.jpg" alt="" srcset="">
+                                <img src="images/blog-1.jpg" class="my-2" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- about end -->
+
+        <!-- featured section -->
+        <section id = "featured" class = "py-4">
+            <div class = "container">
+                <div class = "title-wrap">
+                    <span class = "sm-title">know about some places before your travel</span>
+                    <h2 class = "lg-title">featured places</h2>
+                </div>
+
+                <div class = "row g-0 d-flex justify-content-center align-items-center">
+
+
+                    <div class = "col-lg-6 featured-item my-2 shadow">
+                        <img src = "images/featured-north-bondi-australia.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Darwin, Australia
+                            </span>
+                            <div>
+                                <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero soluta illum, harum amet excepturi sit?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "col-lg-6 featured-item my-2 shadow">
+                        <img src = "images/featured-berlin-germany.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Berlin, Germany
+                            </span>
+                            <div>
+                                <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero soluta illum, harum amet excepturi sit?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "col-lg-6 featured-item my-2 shadow">
+                        <img src = "images/featured-reo-de-janeiro-brazil.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Reo De Janeiro, Brazil
+                            </span>
+                            <div>
+                                <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero soluta illum, harum amet excepturi sit?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "col-lg-6 featured-item my-2 shadow">
+                        <img src = "images/featured-khwaeng-wat-arun-thailand.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Khwaeng wat arun, thailand
+                            </span>
+                            <div>
+                                <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero soluta illum, harum amet excepturi sit?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "col-lg-6 featured-item my-2 shadow">
+                        <img src = "images/featured-rome-italy.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Rome, Italy
+                            </span>
+                            <div>
+                                <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero soluta illum, harum amet excepturi sit?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "col-lg-6 featured-item my-2 shadow">
+                        <img src = "images/featured-fuvahmulah-maldives.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                fuvahmulah, maldives
+                            </span>
+                            <div>
+                                <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero soluta illum, harum amet excepturi sit?</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div> 
+            </div>
+        </section>
+        <!-- end of featured section -->
+
+        <!-- services section -->
+        <section id = "services" class = "py-4">
+            <div class = "container">
+                <div class = "title-wrap">
+                    <span class = "sm-title">know about services that we offer</span>
+                    <h2 class = "lg-title">Our services</h2>
+                </div>
+
+                <div class = "row">
+                    <div class = "col-lg-4 my-2 ">
+                        <a class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-hotel fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3 text-dark">Rooms & Appartment</h5>
+                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <a class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-utensils fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3 text-dark">Food & Restaurant</h5>
+                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </a>
+                    </div>
+
+                    <div class = "col-lg-4 services-item">
+                    <a class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-money-bill fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3 text-dark">Rooms & Appartment</h5>
+                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of services section -->
+
+
+        <!-- package-->
+<section>
+    <div class="container my-5">
+        <div class="col-12 text-center my-5">
+            <h1 class="fw-700">Travel Package</h1>
+        </div>
+        <div class="swiper pb-5">
+            <div class="swiper-wrapper py-5">
+                <div class="swiper-slide">
+                    <div class="room-item shadow rounded overflow-hidden">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="images/gallery-7.jpg" alt="">
+                            <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                        </div>
+                        <div class="p-4 mt-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Junior Suite</h5>
+                                <div class="ps-2">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                            </div>
+                            <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
+                                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="room-item shadow rounded overflow-hidden">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="images/gallery-8.jpg" alt="">
+                            <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                        </div>
+                        <div class="p-4 mt-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Junior Suite</h5>
+                                <div class="ps-2">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                            </div>
+                            <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
+                                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="room-item shadow rounded overflow-hidden">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="images/gallery-9.jpg" alt="">
+                            <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                        </div>
+                        <div class="p-4 mt-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Junior Suite</h5>
+                                <div class="ps-2">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                            </div>
+                            <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
+                                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination my-5 "></div>
+            <div class="swiper-button-prev "></div>
+            <div class="swiper-button-next "></div>
+        </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- package -->
+
+        <!-- testimonials section -->
+        <section id = "testimonials" class = "py-4">
+            <div class = "container">
+                <div class="col-12 text-center my-5">
+                    <h1 class="fw-700">What Client Says</h1>
+                </div>
+                <div class="col-12">
+            
+                    <div class="swiper pb-5">
+                        <div class="swiper-wrapper pb-5">
+                            <div class="swiper-slide my-4 ">
+                                <div class="testimonial-card">
+                                    <div class="card-head text-center bg-white pb-5">
+                                        <div class="icon text-center text-pegawai-darkblue ">
+                                            <i class="fa fa-comment fa-2x text-center mt-3"></i>
+                                        </div>
+                                        <p class="fs-6 px-2 my-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo officia odio consequatur perspiciatis quaerat vel amet consectetur eligendi, accusantium sit, iure earum excepturi laborum voluptatum recusandae saepe itaque sint iste..</p>
+                                        <span class="line bg-pegawai-blue-gradient text-center rounded-2 mx-auto d-block position-relative mb-3" style="width: 30px; height: 5px; "></span>
+                                    </div>  
+                                    <div class="d-flex flex-column card-profile bg-travel text-white justify-content-center align-items-center">   
+                                        <img class="img-fluid user-pic border border-3 border-warning rounded-circle" src="images/test-1.jpg"  style="margin-top:-30px"  alt="" srcset="">
+                                        <div class=" text-center">
+                                            <h5 class="mb-1 fw-700 text-pegawai-orange">Client Name</h5>
+                                             <i class="">Profession</i>
+                                          <div class="stars text-warning">
+                                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide my-4 ">
+                                <div class="testimonial-card">
+                                    <div class="card-head text-center bg-white pb-5">
+                                        <div class="icon text-center text-pegawai-darkblue ">
+                                            <i class="fa fa-comment fa-2x text-center mt-3"></i>
+                                        </div>
+                                        <p class="fs-6 px-2 my-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo officia odio consequatur perspiciatis quaerat vel amet consectetur eligendi, accusantium sit, iure earum excepturi laborum voluptatum recusandae saepe itaque sint iste..</p>
+                                        <span class="line bg-travel text-center rounded-2 mx-auto d-block position-relative mb-3" style="width: 30px; height: 5px; "></span>
+                                    </div>  
+                                    <div class="d-flex flex-column bg-travel text-white justify-content-center align-items-center">   
+                                        <img class="img-fluid user-pic border border-3 border-warning rounded-circle" src="images/test-2.jpg"  style="margin-top:-30px"  alt="" srcset="">
+                                        <div class=" text-center">
+                                            <h5 class="mb-1 fw-700 text-pegawai-orange">Client Name</h5>
+                                             <i class="">Profession</i>
+                                          <div class="stars text-warning">
+                                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="swiper-slide my-4 ">
+                                <div class="testimonial-card">
+                                    <div class="card-head text-center bg-white pb-5">
+                                          <div class="icon text-center text-pegawai-darkblue ">
+                                              <i class="fa fa-comment fa-2x text-center mt-3"></i>
+                                          </div>
+                                          <p class="fs-6 px-2 my-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo officia odio consequatur perspiciatis quaerat vel amet consectetur eligendi, accusantium sit, iure earum excepturi laborum voluptatum recusandae saepe itaque sint iste..</p>
+                                          <span class="line bg-pegawai-blue-gradient text-center rounded-2 mx-auto d-block position-relative mb-3" style="width: 30px; height: 5px; "></span>
+                                      </div>  
+                                      <div class="d-flex flex-column bg-travel text-white justify-content-center align-items-center">   
+                                          <img class="img-fluid user-pic border border-3 border-warning rounded-circle" src="images/test-3.jpg"  style="margin-top:-30px"  alt="" srcset="">
+                                          <div class=" text-center">
+                                              <h5 class="mb-1 fw-700 text-pegawai-orange">Client Name</h5>
+                                               <i class="">Profession</i>
+                                            <div class="stars text-warning">
+                                              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                            </div>
+                                          </div>
+                                      </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="swiper-pagination my-5 "></div>
+                        <div class="swiper-button-prev "></div>
+                        <div class="swiper-button-next "></div>
+                    </div>
+                
+            </div>
+        
+            </div>
+        </section>
+        <!-- end of testimonials section -->
+
+
+
+
+        <!-- video section -->
+        <section id = "video">
+            <div class="container-XXL">
+                <div class="row g-0">
+                    <div class="col-lg-6 bg-black text-white ">
+                        <div class="content ms-lg-2">
+                            <div class="d-flex mini-title mt-5">
+                                <h5 class="text-warning"> About us</h5>
+                                <span class="bg-primary mx-3 mt-2" style="width: 35px; height:2px;"></span>
+                            </div>
+                            <h1 class="fw-bold my-5">Discover A Brand Luxurious Hotel</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus tempore, harum quos provident numquam, voluptatum aliquam accusantium in voluptatibus modi unde consequuntur est. Dignissimos unde perferendis magni, laudantium rerum possimus.</p>
+                            <div class=" mt-5">
+                                <a href="" class="btn btn-primary my-3 me-2">Contact</a>
+                                <a href="" class="btn btn-warning rounded-1 px-4 py-2 fw-bold">About us</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class = "video-wrapper flex">
+                            <video loop>
+                                <source src = "videos/video-section.mp4" type = "video/mp4">
+                            </video>
+                            <button type = "button" id = "play-btn">
+                                <i class = "fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- end of video section -->
+
+        <!-- footer -->
+        <footer class = "py-4">
+            <div class = "container">
+                <div class="row my-4">
+                <div class = "col-lg-3 footer-item">
+                    <a href = "index.html" class = "site-brand">
+                        <h1 class="me-lg-5">Travel &amp; <span class="text-travel">Hotel</span></h1>
+                    </a>
+                    <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptates maiores nam vitae iusto. Placeat rem sint voluptas natus exercitationem autem quod neque, odit laudantium reiciendis ipsa suscipit veritatis voluptate.</p>
+                </div>
+
+                <div class = "col-lg-3 footer-item">
+                    <h2>Follow us on: </h2>
+                    <ul class = "social-links ">
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-tiktok"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-google"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "col-lg-3 footer-item">
+                    <h2>Popular Places:</h2>
+                    <ul>
+                        <li><a href = "#">Thailand</a></li>
+                        <li><a href = "#">Indonesia</a></li>
+                        <li><a href = "#">Maldives</a></li>
+                        <li><a href = "#">Switzerland</a></li>
+                        <li><a href = "#">Germany</a></li>
+                    </ul>
+                </div>
+
+                <div class = "col-lg-3 subscribe-form footer-item">
+                    <h2>Subscribe for Newsletter!</h2>
+                    <form class = "flex">
+                        <input type = "email" placeholder="Enter Email" class = "form-control">
+                        <input type = "submit" class = "btn-primary mt-2" value = "Subscribe">
+                    </form>
+                </div>
+            </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+
+        <!-- js -->
+        <script src = "js/script.js"></script>
+        <script>
+            // play/pause video
+            let video = document.querySelector('.video-wrapper video');
+            document.getElementById('play-btn').addEventListener('click', () => {
+                if(video.paused){
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        </script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+    // Optional parameters
+            // direction: 'vertical',
+            slidesPerView: 1,
+            loop: true,
+            spaceBetween: 30,
+            centeredSlides:true,
+            grabCursor:true,
+            autoplay:{
+              delay:2000,
+              disableOnInteraction: true,
+              pauseOnMouseEnter: true,
+            },
+            breakpoints:true,
+          
+
+            breakpoints:{
+              320:{
+                slidesPerView:1,  
+                spaceBetweenSlides: 50
+              },
+              1000:{
+                slidesPerView:3,  
+                spaceBetweenSlides: 50
+              }
+            },
+            
+            // autoplay: {
+            // delay: 2500,
+            // disableOnInteraction: false,
+            // },
+            
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+    
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+    
+            // And if we need scrollbar
+            // scrollbar: {
+            // 	el: '.swiper-scrollbar',
+            // },
+        });
+
+    </script>
+
+    </body>
+</html>
