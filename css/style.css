@@ -41,6 +41,9 @@ html, body{
 h1, h2, h3, h4, h5, h6{
     font-family: 'Raleway', sans-serif;
 }
+h1.intro-title{
+    font-size: 5rem !important;
+}
 a{
     color: var(--dark);
     text-decoration: none;
@@ -1163,7 +1166,7 @@ form.contact{
     padding: 60px 80px;
     border-radius: 50px;
     text-align: center;
-    box-shadow: 5px 5px #787878;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     border: 3px solid #1ec6b6 !important;
  
 }

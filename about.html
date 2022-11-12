@@ -17,9 +17,10 @@
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
    
         <!-- custom css -->
-
         <link rel = "stylesheet" href = "css/style.css">
-        <!-- <link rel = "stylesheet" href = "css/responsive.css"> -->
+         <!-- animate -->
+         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     </head>
     <body>
         <!-- navbar  -->
@@ -65,19 +66,19 @@
         <!-- about section -->
         <section id = "about" class = "py-4">
             <div class = "container">
-                <div class = "title-wrap">
+                <div class = "title-wrap " data-aos="fade-down">
                     <span class = "sm-title">things to know about us</span>
                     <h2 class = "lg-title">our story</h2>
                 </div>
 
                 <div class = "row">
-                    <div class = "col-lg-5 mx-3 my-2 ">
+                    <div class = "col-lg-5 mx-3 my-2 " data-aos="fade-right">
                         <div class="img-about position-relative overflow-hidden p-5 pe-0">
 
                             <img src = "images/about-img.jpg" alt = "about img">
                         </div>
                     </div>
-                    <div class = "col-lg-6">
+                    <div class = "col-lg-6" data-aos="fade-left">
                         <h2>15 Years of Experience</h2>
                         <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae vitae sed aperiam qui repudiandae earum voluptatem. Modi at inventore omnis veniam necessitatibus exercitationem vel nesciunt delectus ex officiis, culpa doloremque odit illo saepe placeat. Delectus consequuntur reprehenderit omnis accusantium officiis!</p>
                         <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique explicabo blanditiis quidem consequuntur qui quaerat fuga iste tenetur consequatur porro. Aliquam maiores alias doloribus at quisquam quo numquam perferendis. Odit!</p>
@@ -90,13 +91,13 @@
         <!-- facts section -->
         <section id = "facts" class = "py-4 flex">
             <div class = "container">
-                <div class = 'title-wrap'>
+                <div class = 'title-wrap' data-aos="zoom-in">
                     <span class = "sm-title">know some facts about our agency</span>
                     <h2 class = "lg-title">fun facts</h2>
                 </div>
 
                 <div class = "row">
-                    <div class = "col-lg-3 facts-item">
+                    <div class = "col-lg-3 facts-item" data-aos="fade-in">
                         <span class = "fas fa-camera-retro facts-icon"></span>
                         <div class = "facts-info">
                             <strong>1220</strong>
@@ -104,7 +105,7 @@
                         </div>
                     </div>
                     
-                    <div class = "col-lg-3 facts-item">
+                    <div class = "col-lg-3 facts-item" data-aos="fade-in">
                         <span class = "fas fa-mountain facts-icon"></span>
                         <div class = "facts-info">
                             <strong>90</strong>
@@ -112,7 +113,7 @@
                         </div>
                     </div>
                     
-                    <div class = "col-lg-3 facts-item">
+                    <div class = "col-lg-3 facts-item" data-aos="fade-in">
                         <span class = "fas fa-umbrella-beach  facts-icon"></span>
                         <div class = "facts-info">
                             <strong>550</strong>
@@ -121,7 +122,7 @@
                     </div>
 
 
-                    <div class = "col-lg-3 facts-item">
+                    <div class = "col-lg-3 facts-item" data-aos="fade-in">
                         <span class = "fas fa-ship facts-icon"></span>
                         <div class = "facts-info">
                             <strong>120</strong>
@@ -201,8 +202,9 @@
 
         <!-- js -->
         <script src = "js/script.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
-            
+                   AOS.init();
         </script>
     </body>
 </html>
